@@ -1,40 +1,12 @@
 import React from 'react'
 import "./services.css"
-import ServiceImg1 from "../../assets/service-1.svg"
-import ServiceImg2 from "../../assets/service-2.svg"
-import ServiceImg3 from "../../assets/service-3.svg"
-
-
-const data = [
-  {
-    id: 1,
-    image: ServiceImg1,
-    title: "UI/UX design",
-    description:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
-  },
-  {
-    id: 2,
-    image: ServiceImg2,
-    title: "Web Development",
-    description:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
-  },
-  {
-    id: 3,
-    image: ServiceImg3,
-    title: "Photography",
-    description:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
-  },
-];
-
+import Data from './Data'
 
 const Services = () => {
-  return <section className='service container section'>
+  return <section className='service container section' id='service'>
     <h2 className='section_title'>Services</h2>
     <div className='service_container grid'>
-      {data.map(({ id, image, title, description }) => {
+      {Data.map(({ id, image, title, description }) => {
         return (
           <div className='service_card' key={id}>
             <img src={image} alt={`image id`} className="service_img" />

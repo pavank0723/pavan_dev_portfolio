@@ -16,9 +16,10 @@ function App() {
     <Home />
     <About />
     <Services />
+    <Resume />
     <Pricing />
     <Portfolio />
-    <Resume />
+    
     <Blog />
     <Testimonials />
     <Contact />
