@@ -17,8 +17,8 @@ function App() {
     <About />
     <Services />
     <Resume />
-    <Pricing />
     <Portfolio />
+    <Pricing />
     
     <Blog />
     <Testimonials />
