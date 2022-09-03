@@ -23,6 +23,7 @@ const Sidebar = () => {
                 <i className='icon-user-following'></i>
               </a>
             </li>
+            
 
             <li className='nav_item'>
               <a href='#service' className='nav_link'>
@@ -51,6 +52,12 @@ const Sidebar = () => {
             <li className='nav_item'>
               <a href='#contact' className='nav_link'>
                 <i className='icon-bubble'></i>
+              </a>
+            </li>
+
+            <li className='nav_item'>
+              <a href='#certificate' className='nav_link'>
+                <i className='icon-badge'></i>
               </a>
             </li>
 

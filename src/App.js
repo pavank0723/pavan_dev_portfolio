@@ -9,6 +9,7 @@ import Resume from './components/resume/Resume';
 import Blog from './components/blog/Blog';
 import Contact from './components/contact/Contact';
 import Testimonials from './components/testimonials/Testimonials';
+import Certificate from './components/certificate/Certificate';
 function App() {
   return <>
   <Sidebar/>
@@ -23,6 +24,7 @@ function App() {
     <Blog />
     <Testimonials />
     <Contact />
+    <Certificate />
     </main>
   </>
 }
