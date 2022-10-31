@@ -10,6 +10,11 @@ import Blog from './components/blog/Blog';
 import Contact from './components/contact/Contact';
 import Testimonials from './components/testimonials/Testimonials';
 import Certificate from './components/certificate/Certificate';
+import Skill from './components/skill/Skill';
+import NewPortfolio from './components/portfolio/NewPortfolio';
+import NewPortfolio2 from './components/portfolio/NewPortfolio2';
+import NewPortfolio3 from './components/portfolio/NewPortfolio3';
+
 function App() {
   return <>
   <Sidebar/>
@@ -18,7 +23,14 @@ function App() {
     <About />
     <Services />
     <Resume />
+    <Skill />
     <Portfolio />
+
+    <NewPortfolio />
+    <NewPortfolio2 />
+
+    <NewPortfolio3 />
+    
     <Pricing />
     
     <Blog />

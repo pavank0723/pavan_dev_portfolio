@@ -13,12 +13,12 @@
     -ms-transition: .3s;
     -o-transition: .3s;
 }
-.work_active .work_item{
+.work_active{
     color: var(--first-color);
 }
-.work_item:hover{
+/* .work_item:hover{
     color: var(--first-color);
-}
+} */
 .work_container{
     grid-template-columns: repeat(3,1fr);
     gap: 1.85rem;

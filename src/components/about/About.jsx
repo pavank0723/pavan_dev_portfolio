@@ -17,7 +17,7 @@ const About = () => {
 
             </p>
             <a href='' className='btn'>
-              Download <i class="fa-solid fa-download"></i>
+              Download <i className="fa-solid fa-download"></i>
             </a>
 
           </div>

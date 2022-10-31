@@ -5,7 +5,7 @@ const AboutBox = () => {
         <div className='about_boxes grid'>
             <div className='about_box'>
 
-                <i class="about_icon fa-solid fa-bezier-curve"></i>
+                <i className="about_icon fa-solid fa-bezier-curve"></i>
                 <div>
                     <h3 className='about_title'>10+</h3>
                     <span className='about_subtitle'>UI Design completed</span>
@@ -21,7 +21,7 @@ const AboutBox = () => {
 
             </div>
             <div className='about_box'>
-                <i class="about_icon fa-solid fa-mug-hot"></i>
+                <i className="about_icon fa-solid fa-mug-hot"></i>
                 <div>
                     <h3 className='about_title'>15+</h3>
                     <span className='about_subtitle'>Satisfied clients</span>
