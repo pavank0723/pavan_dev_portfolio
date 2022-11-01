@@ -1,11 +1,30 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./portfolio.css"
 import Menu from './Menu'
+import CategoryButton from './CategoryButton'
+import WorkItems from './WorkItems'
+
+const allCategory = ["All", ...new Set(Menu.map((curElem) => curElem.category))]
 
 const Portfolio = () => {
   const [work, setWork] = useState(Menu)
+  const [catItem, setCatItem] = useState(allCategory)
+
+  const [tag, setTag] = useState('All')
+
+  const [filteredImage, setFilteredImage] = useState([])
+
+  useEffect(() => {
+    tag === 'All' ? setFilteredImage(work) : setFilteredImage(work.filter(item => item.category === tag))
+  }, [tag])
+
   const filterItem = (categoryItem) => {
-    const updatedItems = Menu.filter((curElem) =>{
+
+    if (categoryItem === "All") {
+      setWork(Menu)
+      return
+    }
+    const updatedItems = Menu.filter((curElem) => {
       return curElem.category === categoryItem
     })
 
@@ -13,38 +32,30 @@ const Portfolio = () => {
   }
 
   return (
-    <section className='portfolio container service' id='portfolio'>
-      <h3 className='section_title'>Recent works</h3>
+    <section className='work container section' id='portfolio'>
+      <h3 className='section_title'>Portfolio</h3>
+      <span className='section__subtitle'> Most recent works</span>
 
+      {/* ------==== Work Menu ====----- */}
       <div className='work_filters'>
-        <span className='work_item' onClick={() => setWork(Menu)}>All</span>
-        <span className='work_item' onClick={() => filterItem("Mobile App")}>Mobile App</span>
-        <span className='work_item' onClick={() => filterItem("Website")}>Website</span>
-        <span className='work_item' onClick={() => filterItem("API")}>API</span>
-        <span className='work_item' onClick={() => filterItem("UI Design")}>UI Design</span>
+
+        <CategoryButton
+          filterItem={filterItem}
+          catItem={catItem}
+          handleSetTag={setTag}
+          currentTag={tag}
+        />
       </div>
 
-      <div className='work_container grid'>
-      {work.map((elem) => {
-        const{id,image,title,category} = elem
-        return(
-          <div className='work_card' key={id}>
-            <div className='work_thumbnail'>
-              <img src={image} className='work_img' alt='' />
-              <div className='work_mask'></div>
-            </div>
-            
-            <span className='work_category'>{category}</span>
-            <h3 className='work_title'>{title}</h3>
-            <a href='#' className='work_button'>
-              <i className='icon-link work_button-icon'></i>
-            </a>
-          </div>
-          
-        )
-      })}
+
+      {/* ------==== Work List ====----- */}
+
+
+      <div className='work_container container grid'>
+        <WorkItems filteredImage={filteredImage} />
 
       </div>
+
     </section>
   )
 }

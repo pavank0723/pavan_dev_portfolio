@@ -18,7 +18,7 @@ const Menu = [
     {
       id: 3,
       title: "JavaScript",
-      subtitle:"60%",
+      subtitle:"50%",
       category: "Frontend Development",
       description: "More than 6+ months",
       icon: "uil-brackets-curly"
@@ -26,7 +26,7 @@ const Menu = [
     {
       id: 4,
       title: "React",
-      subtitle:"60%",
+      subtitle:"50%",
       category: "Frontend Development",
       description: "More than 6+ months",
       icon: "uil-brackets-curly"
@@ -43,7 +43,7 @@ const Menu = [
     {
       id: 6,
       title: "Figma",
-      subtitle:"60%",
+      subtitle:"80%",
       category: "UI / UX design",
       description: "More than 6+ months",
       icon: "uil-swatchbook"
@@ -52,7 +52,7 @@ const Menu = [
     {
       id: 7,
       title: "Adobe XD",
-      subtitle:"60%",
+      subtitle:"50%",
       category: "UI / UX design",
       description: "More than 6+ months",
       icon: "uil-swatchbook"
@@ -61,7 +61,7 @@ const Menu = [
     {
       id: 8,
       title: "Photoshop",
-      subtitle:"60%",
+      subtitle:"50%",
       category: "UI / UX design",
       description: "More than 6+ months",
       icon: "uil-swatchbook"
@@ -70,7 +70,7 @@ const Menu = [
     {
       id: 9,
       title: "Corel Draw",
-      subtitle:"60%",
+      subtitle:"70%",
       category: "UI / UX design",
       description: "More than 6+ months",
       icon: "uil-swatchbook"
@@ -88,7 +88,7 @@ const Menu = [
     {
       id: 11,
       title: "SQL",
-      subtitle:"60%",
+      subtitle:"50%",
       category: "Backend Development",
       description: "More than 6+ months",
       icon: "uil-server-network"
@@ -97,7 +97,7 @@ const Menu = [
     {
       id: 12,
       title: "Java",
-      subtitle:"60%",
+      subtitle:"40%",
       category: "Backend Development",
       description: "More than 6+ months",
       icon: "uil-server-network"
@@ -106,7 +106,7 @@ const Menu = [
     {
       id: 13,
       title: "Dart",
-      subtitle:"60%",
+      subtitle:"40%",
       category: "Backend Development",
       description: "More than 6+ months",
       icon: "uil-server-network"

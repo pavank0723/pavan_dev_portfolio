@@ -1,30 +1,26 @@
 import React from 'react'
 
-const WorkItems = ({ work }) => {
+const WorkItems = ({ filteredImage }) => {
     return (
         <>
-            <div className='work_container grid'>
-                {work.map((elem) => {
-                    const { id, image, title, category } = elem
-                    return (
-                        <div className='work_card' key={id}>
-                            <div className='work_thumbnail'>
-                                <img src={image} className='work_img' alt='' />
-                                <div className='work_mask'></div>
-                            </div>
 
-                            <span className='work_category'>{category}</span>
-                            <h3 className='work_title'>{title}</h3>
-                            <a href='#' className='work_button'>
-                                <i className='icon-link work_button-icon'></i>
-                            </a>
-                        </div>
+            {filteredImage.map((elem) => {
+                const { id, image, title, demo } = elem
+                return (
+                    <div className='work_card' key={id}>
 
-                    )
-                })}
+                        <img src={image} className='work_img' alt='' />
 
-            </div>
+                        <h3 className='work_title'>{title}</h3>
+                        <a href={demo} target='_blank' className='work_button'>
+                            Demo <i className='uil uil-arrow-right work_button_icon'></i>
+                        </a>
+                    </div>
+
+                )
+            })}
         </>
+
     )
 }
 

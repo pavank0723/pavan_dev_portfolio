@@ -1,4 +1,4 @@
-.work_filters{
+/* .work_filters{
     display: flex;
     align-items: center;
     column-gap: 1.85rem;
@@ -16,9 +16,9 @@
 .work_active{
     color: var(--first-color);
 }
-/* .work_item:hover{
+.work_item:hover{
     color: var(--first-color);
-} */
+}
 .work_container{
     grid-template-columns: repeat(3,1fr);
     gap: 1.85rem;
@@ -138,4 +138,4 @@
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
-}
+} */

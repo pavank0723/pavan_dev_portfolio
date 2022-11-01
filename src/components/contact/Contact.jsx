@@ -28,7 +28,7 @@ const Contact = () => {
               <div className='contact_card'>
                 <i className='uil uil-at services_icon'></i>
                 <h3 className='contact_card_title'>Email</h3>
-                <span className='contact_card_data'>pavan.yadav@gmail.com</span>
+                <span className='contact_card_data'>pavan.yadav0723@gmail.com</span>
 
                 <a href='mailto:pavan.yadav@gmail.com.com' target='_blank' className='contact_button'> Write me <i className='uil uil-arrow-right contact_button_icon'></i></a>
               </div>

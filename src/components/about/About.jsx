@@ -16,7 +16,7 @@ const About = () => {
 
         <div className='about_data'>
           <AboutBox />
-          <p className='about_description'> I'm Pavan Yadav, Web developer from Mumbai, India. I have rich experience in web site design and building and customization, also I am good in Logo designing.
+          <p className='about_description'> I'm Pavan Yadav, and Today's the most popular plateform to earn is freelancer. The every one have a some talent so here is opportunity to prove yourself . I have knowledge about React JS, Flutter, UI Designing and I have contributed in 2 client basied API Project in ASP .Net Core and ..
 
           </p>
           <a download="" href={MyResume} className='btn'>
