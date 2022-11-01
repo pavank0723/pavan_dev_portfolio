@@ -4,12 +4,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1001;
+    z-index: var(--z-fixed);
 }
 
 .intro {
-    max-width: 540px;
+    max-width: 520px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
 }
 
 .home_img {
@@ -26,13 +30,16 @@
 
 .home_socials {
     display: flex;
+    justify-content: center;
+    align-items: center;
     column-gap: 1.75rem;
     margin: 1.5rem 0;
+    width: 100%;
 }
 
 .home_social_link {
     color: var(--title-color);
-    font-size: var(--h3-font-size);
+    font-size: var(--h2-font-size);
     transition: .3s;
     -webkit-transition: .3s;
     -moz-transition: .3s;
@@ -55,7 +62,8 @@
     font-size: var(--small-font-size);
     color: var(--title-color);
 }
-.home_type_Writter{
+
+.home_type_Writter {
     color: var(--first-color);
     font-weight: var(--font-bold);
 }
@@ -114,117 +122,54 @@
     -webkit-animation: ani-mouse 2s linear infinite;
 }
 
-.shapes {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .intro {
+        margin-bottom: 3rem;
+    }
+    .home_social_link {
+        font-size: var(--h2-font-size);
+    }
 }
-
-.shape {
-    position: absolute;
-}
-
-@keyframes clockwiseSpin {
-    from {
-        transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .intro {
+        margin-bottom: 5rem;
     }
 
-    to {
-        transform: rotate(360deg);
-        -webkit-transform: rotate(360deg);
-        -moz-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        -o-transform: rotate(360deg);
+    .home {
+        position: relative;
+        min-height: 90vh;
+    }
+    .home_social_link {
+        font-size: var(--h2-font-size);
     }
 }
 
-@keyframes anti_clockwiseSpin {
-    from {
-        transform: rotate(360deg);
-        -webkit-transform: rotate(360deg);
-        -moz-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        -o-transform: rotate(360deg);
+@media screen and (max-width: 576px) {
+    .intro {
+        margin-bottom: 5rem;
     }
-
-    to {
-        transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
+    .home {
+        position: relative;
+        min-height: 90vh;
+    }
+    .home_social_link {
+        font-size: var(--h2-font-size);
     }
 }
 
-.s1 {
-    left: 2%;
-    top: 10%;
-    animation: clockwiseSpin 2s linear infinite;
-    -webkit-animation: clockwiseSpin 2s linear infinite;
-}
-
-.s2 {
-    left: 18%;
-    top: 30%;
-    /* animation: clockwiseSpin 3s infinite;
-    -webkit-animation: clockwiseSpin 3s infinite; */
-}
-
-.s3 {
-    left: 5%;
-    bottom: 30%;
-    animation: clockwiseSpin 2s linear infinite;
-    -webkit-animation: clockwiseSpin 2s linear infinite;
-}
-
-.s4 {
-    left: 2%;
-    bottom: 10%;
-    
-}
-
-.s5 {
-    left: 22%;
-    bottom: 40%;
-}
-
-.s6 {
-    left: 36%;
-    bottom: 10%;
-}
-
-.s7 {
-    top: 20%;
-    right: 25%;
-}
-
-.s8 {
-    right: 24%;
-    bottom: 20%;
-}
-
-.s9 {
-    top: 10%;
-    right: 2%;
-    animation: anti_clockwiseSpin 2s linear infinite;
-    -webkit-animation: anti_clockwiseSpin 2s linear infinite;
-}
-
-.s10 {
-    top: 45%;
-    right: 11%;
-}
-
-.s11 {
-    bottom: 10%;
-    right: 2%;
-    animation: anti_clockwiseSpin 2s linear infinite;
-    -webkit-animation: anti_clockwiseSpin 2s linear infinite;
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .intro {
+        margin-bottom: 5rem;
+    }
+    .home {
+        position: relative;
+        min-height: 90vh;
+    }
+    .home_social_link {
+        font-size: var(--h2-font-size);
+    }
 }

@@ -94,3 +94,39 @@
     display: block;
     background-color: var(--first-color);
 }
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .skills_container{
+        grid-template-columns: 340px 300px;
+    }
+    .skills_list{
+        row-gap: 1.7rem;
+    }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .skills_container{
+        grid-template-columns: 500px;
+        row-gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .skills_container{
+        grid-template-columns: 2fr;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .skills_container{
+        grid-template-columns: 1fr;
+        
+    }
+    .skills_title{
+        font-size: var(--normal-font-size);
+    }
+}

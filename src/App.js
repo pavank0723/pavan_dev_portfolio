@@ -14,16 +14,26 @@ import Skill from './components/skill/Skill';
 import NewPortfolio from './components/portfolio/NewPortfolio';
 import NewPortfolio2 from './components/portfolio/NewPortfolio2';
 import NewPortfolio3 from './components/portfolio/NewPortfolio3';
+import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
+import ScrollUp from './components/scrollup/ScrollUp';
 
 function App() {
   return <>
-  <Sidebar/>
+    {/* <Sidebar/> */}
+
+    <Header />
     <main className='main'>
-    <Home />
-    <About />
-    <Services />
+      <Home />
+       <About />
+       <Skill />
+       <Services />
+       {/* <Resume />
+       <NewPortfolio2 /> */}
+       <Contact />
+    {/*
     <Resume />
-    <Skill />
+    
     <Portfolio />
 
     <NewPortfolio />
@@ -36,8 +46,10 @@ function App() {
     <Blog />
     <Testimonials />
     <Contact />
-    <Certificate />
+    <Certificate /> */}
     </main>
+    <Footer />
+    <ScrollUp />
   </>
 }
 

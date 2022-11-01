@@ -38,7 +38,8 @@ const NewPortfolio2 = () => {
   
   return (
     <section className='portfolio container service' id='portfolio'>
-      <h3 className='section_title'>Recent works 2</h3>
+      <h3 className='section_title'>Recent works</h3>
+      <span className='section__subtitle'> Get in touch</span>
 
       {/* ------==== Work Menu ====----- */}
       <div className='work_filters'>

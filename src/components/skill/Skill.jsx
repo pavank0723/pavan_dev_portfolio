@@ -37,7 +37,8 @@ const Skill = () => {
     return (
         <>
             <section className='skill container section' id='skills'>
-                <h2 className='section_title'>My Experience </h2>
+                <h2 className='section_title'>Skills</h2>
+                <span className='section__subtitle'> My technical skills</span>
                 <div className='skills_container container grid'>
                     {/* Experience Tabs */}
                     <div className='skills_tabs'>

@@ -1,13 +1,12 @@
 import React from 'react'
-import "./resume.css"
+import "./resume2.css"
 import Data from './Data'
 import Card from './Card'
 
-const Resume = () => {
+const Resume2 = () => {
   return (
     <section className='resume container section' id='resume'>
       <h2 className='section_title'>Qualification </h2>
-      <span className='section__subtitle'> My journey</span>
       <div className='resume_container grid'>
         <div className='timeline grid'>
           {Data.map((val, id) => {
@@ -42,4 +41,4 @@ const Resume = () => {
   )
 }
 
-export default Resume
+export default Resume2

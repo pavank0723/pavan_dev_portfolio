@@ -7,10 +7,10 @@
 :root {
     /* === Colors === */
     /* --- Color Mode -> HSL (Hue, Saturation, Lightness) --- */
-
+    --header-height: 3.5rem;
     --first-color: hsl(48, 100%, 50%);
     /* hsl(353, 100%, 65%)*/
-    /* --title-color: hsl(30, 90%, 59%); */
+    --second-color: hsl(30, 90%, 59%);
     --title-color: hsl(60, 2%, 10%);
     --text-color: hsl(30, 2%, 20%);
     --body-color: hsl(258, 68%, 98%);
@@ -134,7 +134,7 @@ img {
 .section_title {
     font-size: var(--h1-font-size);
     margin-left: 0.875;
-    margin-bottom: 3.75rem;
+    
     font-weight: var(--font-bold);
     position: relative;
 }
@@ -148,6 +148,11 @@ img {
     left: -0.875;
     top: -0.875;
 }
+.section__subtitle {
+    display: block;
+    font-size: var(--normal-font-size);
+    margin-bottom: 4rem;
+  }
 
 /* === Layout === */
 .container {
@@ -163,15 +168,13 @@ img {
 
 /* === Button === */
 .btn {
-    padding: 0.75rem 2rem;
+    padding: 1.25rem 2rem;
     line-height: 1;
     border-radius: 1.875rem;
     -webkit-border-radius: 1.875rem;
     -moz-border-radius: 1.875rem;
     -ms-border-radius: 1.875rem;
     -o-border-radius: 1.875rem;
-    box-shadow: 0 0 1rem rgb(0, 0, 0 / 0%);
-    border: 1px solid transparent;
     color: #fff;
     display: inline-block;
     background-color: var(--first-color);
@@ -201,6 +204,13 @@ img {
     -webkit-animation: button-push 0.3s linear 1;
 }
 
+.btn-flex {
+    display: inline-flex;
+}
+
+.btn_icon {
+    margin-left: var(--mb-0-5);
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */

@@ -1,0 +1,136 @@
+.shapes {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.shape {
+    position: absolute;
+}
+
+@keyframes clockwiseSpin {
+    from {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
+
+@keyframes anti_clockwiseSpin {
+    from {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+}
+
+.s1 {
+    left: 2%;
+    top: 10%;
+    animation: clockwiseSpin 2s linear infinite;
+    -webkit-animation: clockwiseSpin 2s linear infinite;
+}
+
+.s2 {
+    left: 18%;
+    top: 30%;
+    /* animation: clockwiseSpin 3s infinite;
+    -webkit-animation: clockwiseSpin 3s infinite; */
+}
+
+.s3 {
+    left: 5%;
+    bottom: 30%;
+    animation: clockwiseSpin 2s linear infinite;
+    -webkit-animation: clockwiseSpin 2s linear infinite;
+}
+
+.s4 {
+    left: 2%;
+    bottom: 10%;
+
+}
+
+.s5 {
+    left: 22%;
+    bottom: 40%;
+}
+
+.s6 {
+    left: 36%;
+    bottom: 10%;
+}
+
+.s7 {
+    top: 20%;
+    right: 25%;
+}
+
+.s8 {
+    right: 24%;
+    bottom: 20%;
+}
+
+.s9 {
+    top: 10%;
+    right: 2%;
+    animation: anti_clockwiseSpin 2s linear infinite;
+    -webkit-animation: anti_clockwiseSpin 2s linear infinite;
+}
+
+.s10 {
+    top: 45%;
+    right: 11%;
+}
+
+.s11 {
+    bottom: 10%;
+    right: 2%;
+    animation: anti_clockwiseSpin 2s linear infinite;
+    -webkit-animation: anti_clockwiseSpin 2s linear infinite;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 576px) {}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .s6 {
+        left: 53%;
+        bottom: 5%;
+    }
+
+    .s10 {
+        top: 55%;
+        right: 11%;
+    }
+}
