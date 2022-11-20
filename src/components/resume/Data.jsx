@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Data = [
     {
       id: 1,
@@ -61,7 +59,7 @@ const Data = [
         icon: "uil-graduation-cap",
         year: "2014 - 2015",
         title: "Secondary (X) - Hindi Medium",
-        subtitle: 'Y.S.K.V.',
+        subtitle: 'Y. S. K. V.',
         desc: "Lorem ipsum dolor sit amet quo ei simul congue exerciad nec admodum perfecto.",
       },
       {

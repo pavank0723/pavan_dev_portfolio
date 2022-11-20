@@ -9,8 +9,7 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import ScrollUp from './components/scrollup/ScrollUp';
 import Certificate from './components/certificate/Certificate';
-import Resume2 from './components/resume/Resume2';
-import Resume3 from './components/resume/Resume3';
+import Resume from './components/resume/Resume';
 
 function App() {
   return <>
@@ -21,9 +20,9 @@ function App() {
       <Home />
        <About />
        <Skill />
-       <Resume2 />
-       <Resume3 />
-       <Services />
+       
+       <Resume />
+       {/* <Services /> */}
        
        <Portfolio />
        <Certificate />
