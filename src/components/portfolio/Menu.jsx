@@ -57,7 +57,7 @@ const Menu = [
     {
       id: 7,
       image: Work2,
-      title: "School Management",
+      title: "School Management API",
       category: "API",
       demo: ""
     },
