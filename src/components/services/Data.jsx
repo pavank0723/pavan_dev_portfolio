@@ -1,6 +1,6 @@
-import ServiceImg1 from "../../assets/service-1.svg"
-import ServiceImg2 from "../../assets/service-2.svg"
-import ServiceImg3 from "../../assets/service-3.svg"
+import ServiceImg1 from "../../assets/service/service-1.svg"
+import ServiceImg2 from "../../assets/service/service-2.svg"
+import ServiceImg3 from "../../assets/service/service-3.svg"
 
 const Data = [
     {

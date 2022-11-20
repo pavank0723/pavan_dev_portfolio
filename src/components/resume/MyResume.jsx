@@ -11,7 +11,7 @@ const MyResume = ({ filteredItem }) => {
                         return (
                             i % 2 === 0 ?
 
-                                <div className='qualification_data'>
+                                <div className='qualification_data' key={index}>
                                     <div></div>
                                     <div>
                                         <span className='qualification_rounder'></span>

@@ -6,6 +6,7 @@ import Certificate5 from "../../assets/certificate/certificate_5.jpg"
 import Certificate6 from "../../assets/certificate/certificate_6.jpg"
 import Certificate7 from "../../assets/certificate/certificate_7.jpg"
 import Certificate8 from "../../assets/certificate/certificate_8.jpg"
+import Certificate9 from "../../assets/certificate/certificate_9.jpg"
 
 const CertificateData = [
     {
@@ -59,6 +60,13 @@ const CertificateData = [
     },
     {
       id: 8,
+      image: Certificate9,
+      title: "Big Data Computing",
+      category: "NPTEL",
+      demo: ""
+    },
+    {
+      id: 9,
       image: Certificate8,
       title: "JEE Main Paper 2 2017",
       category: "Other",
