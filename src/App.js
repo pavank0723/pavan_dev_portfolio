@@ -8,6 +8,8 @@ import Skill from './components/skill/Skill';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import ScrollUp from './components/scrollup/ScrollUp';
+import Certificate from './components/certificate/Certificate';
+import Resume2 from './components/resume/Resume2';
 
 function App() {
   return <>
@@ -18,9 +20,11 @@ function App() {
       <Home />
        <About />
        <Skill />
-       <Services />
+       {/* <Resume2 /> */}
+       {/* <Services /> */}
        {/* <Resume />*/}
        <Portfolio />
+       <Certificate />
        <Contact />
     {/*
     <Resume />

@@ -4,7 +4,7 @@ const Menu = [
       title: "HTML",
       subtitle:"70%",
       category: "Frontend Development",
-      description: "More than 6+ months",
+      description: "More than 1+ year",
       icon: "uil-brackets-curly"
     },
     {
@@ -12,7 +12,7 @@ const Menu = [
       title: "CSS",
       subtitle:"60%",
       category: "Frontend Development",
-      description: "More than 6+ months",
+      description: "More than 1+ year",
       icon: "uil-brackets-curly"
     },
     {
@@ -20,7 +20,7 @@ const Menu = [
       title: "JavaScript",
       subtitle:"50%",
       category: "Frontend Development",
-      description: "More than 6+ months",
+      description: "More than 1+ year",
       icon: "uil-brackets-curly"
     },
     {
@@ -28,7 +28,7 @@ const Menu = [
       title: "React",
       subtitle:"50%",
       category: "Frontend Development",
-      description: "More than 6+ months",
+      description: "More than 1+ year",
       icon: "uil-brackets-curly"
     },
     {
@@ -36,7 +36,7 @@ const Menu = [
       title: "Flutter",
       subtitle:"60%",
       category: "Frontend Development",
-      description: "More than 6+ months",
+      description: "More than 1+ year",
       icon: "uil-brackets-curly"
     },
     
@@ -45,7 +45,7 @@ const Menu = [
       title: "Figma",
       subtitle:"80%",
       category: "UI / UX design",
-      description: "More than 6+ months",
+      description: "More than 1.5+ years",
       icon: "uil-swatchbook"
     },
     
@@ -54,7 +54,7 @@ const Menu = [
       title: "Adobe XD",
       subtitle:"50%",
       category: "UI / UX design",
-      description: "More than 6+ months",
+      description: "More than 1.5+ years",
       icon: "uil-swatchbook"
     },
     
@@ -63,7 +63,7 @@ const Menu = [
       title: "Photoshop",
       subtitle:"50%",
       category: "UI / UX design",
-      description: "More than 6+ months",
+      description: "More than 1.5+ years",
       icon: "uil-swatchbook"
     },
     
@@ -72,7 +72,7 @@ const Menu = [
       title: "Corel Draw",
       subtitle:"70%",
       category: "UI / UX design",
-      description: "More than 6+ months",
+      description: "More than 1.5+ years",
       icon: "uil-swatchbook"
     },
 
@@ -106,7 +106,7 @@ const Menu = [
     {
       id: 13,
       title: "Dart",
-      subtitle:"40%",
+      subtitle:"30%",
       category: "Backend Development",
       description: "More than 6+ months",
       icon: "uil-server-network"

@@ -8,6 +8,8 @@ import Work7 from "../../assets/work/work7.jpg"
 import Work8 from "../../assets/work/work8.jpg"
 import Work9 from "../../assets/work/work9.jpg"
 import Work10 from "../../assets/work/work10.jpg"
+import Work11 from "../../assets/work/work11.jpg"
+import Work12 from "../../assets/work/work12.jpg"
 
 const Menu = [
     {
@@ -80,6 +82,22 @@ const Menu = [
       title: "Weather Setu",
       category: "Website",
       demo: "https://pavan-weather-setu.netlify.app/"
+    },
+    
+    {
+      id: 11,
+      image: Work11,
+      title: "Election Setu",
+      category: "DApps App",
+      demo: "#"
+    },
+    
+    {
+      id: 12,
+      image: Work12,
+      title: "Simple Home Automation",
+      category: "IoT",
+      demo: "#"
     },
     
   ];

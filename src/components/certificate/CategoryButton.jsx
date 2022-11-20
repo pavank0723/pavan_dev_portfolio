@@ -7,7 +7,7 @@ const CategoryButton = ({ catItem, handleSetTag, currentTag }) => {
             
                 {
                     catItem.map((curElem, index) => {
-                        return <span className={`work_item ${curElem === currentTag ? 'work_active' : ''}`} key={index} onClick={() => handleSetTag(curElem)}>{curElem}</span>
+                        return <span className={`certificate_item ${curElem === currentTag ? 'certificate_active' : ''}`} key={index} onClick={() => handleSetTag(curElem)}>{curElem}</span>
                     })
                 }
             

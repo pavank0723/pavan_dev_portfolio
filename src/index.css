@@ -16,6 +16,7 @@
     --body-color: hsl(258, 68%, 98%);
     --box-color: hsl(41, 100%, 89%);
     --container-color: #fff;
+    --my-image-color:linear-gradient(to right, #F9D976 , #F39F86);
 
     /* === Font & Typography === */
     /* --- .5rem = 8px | 1rem = 16px | 2rem = 32px ... --- */

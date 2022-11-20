@@ -38,7 +38,6 @@ const Portfolio = () => {
 
       {/* ------==== Work Menu ====----- */}
       <div className='work_filters'>
-
         <CategoryButton
           filterItem={filterItem}
           catItem={catItem}
