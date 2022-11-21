@@ -2,9 +2,7 @@ import React from 'react'
 import "./about.css"
 import Me from "../../assets/py.png"
 import MyResume from "../../assets/pavan's_resume.pdf"
-import AboutSkills from './AboutSkills'
 import AboutBox from './AboutBox'
-import Info from './Info'
 
 const About = () => {
   return (

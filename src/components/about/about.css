@@ -17,11 +17,11 @@
 
 .about_box {
     background-color: var(--container-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    -webkit-border: 1px solid rgba(0, 0, 0, 0.1);
-    -moz-border: 1px solid rgba(0, 0, 0, 0.1);
-    -ms-border: 1px solid rgba(0, 0, 0, 0.1);
-    -o-border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
+    -webkit-border: 1px solid var(--border-color);
+    -moz-border: 1px solid var(--border-color);
+    -ms-border: 1px solid var(--border-color);
+    -o-border: 1px solid var(--border-color);
     border-radius: 0.75rem;
     -webkit-border-radius: 0.75rem;
     -moz-border-radius: 0.75rem;

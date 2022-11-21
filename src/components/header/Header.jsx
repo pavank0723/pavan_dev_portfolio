@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Logo from "../../assets/icon_py2.png"
+import ThemeMode from '../utils/ThemeMode'
 
 import "./header.css"
 
@@ -36,7 +37,7 @@ const Header = () => {
                                     Skill
                                 </a>
                             </li>
-                            
+
 
                             <li className='nav_item'>
                                 <a href='#service' className='nav_link'>
@@ -80,14 +81,19 @@ const Header = () => {
                                 </a>
                             </li>
 
+
                         </ul>
 
                         <i className='uil uil-times nav_close' onClick={() => setToggle(!toggle)}></i>
                     </div>
+                    <div className='nav_toggle_main'>
+                        <ThemeMode />
+                        <div className='nav_toggle' onClick={() => setToggle(!toggle)}>
 
-                    <div className='nav_toggle' onClick={() => setToggle(!toggle)}>
-                        <i className='uil uil-apps nav_icon'></i>
+                            <i className='uil uil-apps nav_icon'></i>
+                        </div>
                     </div>
+
                 </nav>
             </header>
         </>

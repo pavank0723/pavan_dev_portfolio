@@ -10,13 +10,14 @@ import Footer from './components/footer/Footer';
 import ScrollUp from './components/scrollup/ScrollUp';
 import Certificate from './components/certificate/Certificate';
 import Resume from './components/resume/Resume';
-
 function App() {
   return <>
     {/* <Sidebar/> */}
 
     <Header />
+    
     <main className='main'>
+    
       <Home />
        <About />
        <Skill />
