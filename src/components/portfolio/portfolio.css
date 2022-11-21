@@ -29,7 +29,7 @@
 }
 
 .work_active {
-    color: var(--container-color);
+    color: var(--title-color);
     /* width: max-content; */
     background-color: var(--first-color);
     padding: .4rem .6rem;
