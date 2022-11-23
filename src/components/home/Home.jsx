@@ -6,10 +6,13 @@ import ScrollDown from './ScrollDown'
 import Shape from './Shape'
 import { useTypewriter  } from 'react-simple-typewriter'
 import 'react-simple-typewriter/dist/index'
+import { useTranslation } from 'react-i18next'
 
 const Home = () => {
+  const { t } = useTranslation();
+
   const {text} = useTypewriter({
-    words: [ " Developer ✌."," UI Designer ✨."," Self Learner🌞."," Self Believer✍.",],
+    words: [ `${t('developer')}`,`${t('ui_designer')}`,`${t('self_learner')}`,`${t('self_believer')}`,],
     loop: 0, 
     typeSpeed: 70,
     deleteSpeed: 50,
@@ -20,8 +23,8 @@ const Home = () => {
       <div className='intro'>
 
         <img src={PavanImg} alt="Dev Image" className="home_img" />
-        <h1 className='home_name'>Pavan Yadav</h1>
-        <p className='home_self_intro'>I'm a
+        <h1 className='home_name'>{t('my_name')}</h1>
+        <p className='home_self_intro'>{t('i_am')}
           <span className='home_type_Writter'>
             
             {text}
@@ -31,7 +34,7 @@ const Home = () => {
 
         <HeaderSocial />
 
-        <a href='#contact' className='btn'> Hire Me</a>
+        <a href='#contact' className='btn'> {t('hire_me')}</a>
         <ScrollDown />
       </div>
       <Shape />

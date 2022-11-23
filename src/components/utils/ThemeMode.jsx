@@ -5,9 +5,11 @@ const ThemeMode = () => {
 
     const toggleTheme = () => {
         theme === 'dark-theme' ? setTheme('light-theme') : setTheme('dark-theme')
+        localStorage.setItem('theme',theme)
     }
     useEffect(() => {
-        document.body.className = theme
+        let currentTheme = localStorage.getItem('theme')
+        document.body.className = currentTheme
     }, [theme])
     return (
         <>

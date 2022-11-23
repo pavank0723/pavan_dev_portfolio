@@ -1,3 +1,9 @@
+.utils_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 .theme {
     background-color: var(--first-color);
     border-radius: 50px;
@@ -32,28 +38,6 @@
         bottom: 0;
     }
 
-    /* .theme {
-        position: fixed;
-        bottom: -100%;
-        left: 0;
-        width: 100%;
-        background-color: var(--body-color);
-        padding: 2rem 1.5rem 4rem;
-        box-shadow: 0 -1px 4px var(--border-color2);
-        border-radius: 1.5rem 1.5rem 0 0;
-        -webkit-border-radius: 1.5rem 1.5rem 0 0;
-        -moz-border-radius: 1.5rem 1.5rem 0 0;
-        -ms-border-radius: 1.5rem 1.5rem 0 0;
-        -o-border-radius: 1.5rem 1.5rem 0 0;
-        transition: .3s;
-        -webkit-transition: .3s;
-        -moz-transition: .3s;
-        -ms-transition: .3s;
-        -o-transition: .3s;
-    } */
-
-    /* Show Menu */
- 
 }
 
 @media screen and (max-width: 576px) {
@@ -62,8 +46,6 @@
 
 /* For small devices */
 @media screen and (max-width: 350px) {
-    /* .nav_menu {
-        padding: 2rem 0.25rem 4rem;
-    } */
+
    
 }

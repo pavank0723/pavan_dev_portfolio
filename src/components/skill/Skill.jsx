@@ -10,9 +10,9 @@ console.table(Menu)
 
 var resArr = [];
 Menu.forEach(function (item) {
-    var i = resArr.findIndex(x => x.category == item.category);
-    var j = resArr.findIndex(y => y.icon == item.icon);
-    var l = resArr.findIndex(l => l.description == item.description);
+    var i = resArr.findIndex(x => x.category === item.category);
+    var j = resArr.findIndex(y => y.icon === item.icon);
+    var l = resArr.findIndex(l => l.description === item.description);
     if (i <= -1 || j <= -1 || l <= -1) {
         resArr.push({ id: item.id, category: item.category, icon: item.icon, description: item.description });
     }

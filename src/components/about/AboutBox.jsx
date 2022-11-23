@@ -1,22 +1,23 @@
-import React from 'react'
+import { useTranslation } from "react-i18next"
 
 const AboutBox = () => {
+    const { t } = useTranslation()
     return (
         <div className='about_boxes grid'>
             <div className='about_box'>
 
                 <i className="about_icon fa-solid fa-bezier-curve"></i>
                 <div>
-                    <h3 className='about_title'>Freelancing</h3>
-                    <span className='about_subtitle'>1+ year</span>
+                    <h3 className='about_title'>{t('freelancing')}</h3>
+                    <span className='about_subtitle'>{t('year')}</span>
                 </div>
 
             </div>
             <div className='about_box'>
                 <i className='about_icon fa-solid fa-laptop-code'></i>
                 <div>
-                    <h3 className='about_title'>Completed</h3>
-                    <span className='about_subtitle'>6+ Project</span>
+                    <h3 className='about_title'>{t('completed')}</h3>
+                    <span className='about_subtitle'>{t('project')}</span>
                 </div>
 
             </div>
@@ -24,8 +25,8 @@ const AboutBox = () => {
             <div className='about_box'>
                 <i className='about_icon fa-solid fa-cubes'></i>
                 <div>
-                    <h3 className='about_title'>Support</h3>
-                    <span className='about_subtitle'>Online 24/7</span>
+                    <h3 className='about_title'>{t('support')}</h3>
+                    <span className='about_subtitle'>{t('online')}</span>
                 </div>
 
             </div>

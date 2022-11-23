@@ -1,10 +1,14 @@
 import React, { useState } from 'react'
 import Logo from "../../assets/icon_py2.png"
+import LangMode from '../utils/LangMode'
 import ThemeMode from '../utils/ThemeMode'
+
+import { useTranslation } from 'react-i18next'
 
 import "./header.css"
 
 const Header = () => {
+    const { t } = useTranslation()
     const [toggle, setToggle] = useState(false)
     return (
         <>
@@ -19,14 +23,14 @@ const Header = () => {
                             <li className='nav_item'>
                                 <a href='#home' className='nav_link'>
                                     <i className='uil uil-estate nav_icon'></i>
-                                    Home
+                                    {t('home')}
                                 </a>
                             </li>
 
                             <li className='nav_item'>
                                 <a href='#about' className='nav_link'>
                                     <i className='uil uil-user nav_icon'></i>
-                                    About
+                                    {t('about')}
                                 </a>
                             </li>
 
@@ -34,7 +38,7 @@ const Header = () => {
                             <li className='nav_item'>
                                 <a href='#skills' className='nav_link'>
                                     <i className='uil uil-layers nav_icon'></i>
-                                    Skill
+                                    {t('skill')}
                                 </a>
                             </li>
 
@@ -42,21 +46,21 @@ const Header = () => {
                             <li className='nav_item'>
                                 <a href='#service' className='nav_link'>
                                     <i className='uil uil-briefcase-alt nav_icon'></i>
-                                    Service
+                                    {t('service')}
                                 </a>
                             </li>
 
                             <li className='nav_item'>
                                 <a href='#resume' className='nav_link'>
                                     <i className='uil uil-graduation-cap nav_icon'></i>
-                                    Resume
+                                    {t('resume')}
                                 </a>
                             </li>
 
                             <li className='nav_item'>
                                 <a href='#portfolio' className='nav_link'>
                                     <i className='uil uil-link-h nav_icon'></i>
-                                    Portfolio
+                                    {t('portfolio')}
                                 </a>
                             </li>
 
@@ -77,7 +81,7 @@ const Header = () => {
                             <li className='nav_item'>
                                 <a href='#contact' className='nav_link'>
                                     <i className='uil uil-message nav_icon'></i>
-                                    Contact
+                                    {t('contact')}
                                 </a>
                             </li>
 
@@ -87,7 +91,11 @@ const Header = () => {
                         <i className='uil uil-times nav_close' onClick={() => setToggle(!toggle)}></i>
                     </div>
                     <div className='nav_toggle_main'>
-                        <ThemeMode />
+                        <div className='utils_container'>
+                            <ThemeMode />
+                            <LangMode />
+
+                        </div>
                         <div className='nav_toggle' onClick={() => setToggle(!toggle)}>
 
                             <i className='uil uil-apps nav_icon'></i>

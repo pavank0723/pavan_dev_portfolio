@@ -29,7 +29,7 @@
 }
 
 .certificate_active {
-    color: var(--title-color);
+    color: var(--normal-color);
     /* width: max-content; */
     background-color: var(--first-color);
     padding: .4rem .6rem;
