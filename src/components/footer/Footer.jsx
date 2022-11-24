@@ -1,23 +1,25 @@
 import React from 'react'
 import './footer.css'
 import Logo from '../../assets/icon_py2.png'
+import { useTranslation } from 'react-i18next'
 
 const Footer = () => {
+    const { t } = useTranslation()
     return (
         <footer className='footer'>
             <div className='footer_container container'>
                 <h1 className='footer_title'>
-                    <img src={Logo} alt="" className='myLogo' />avan
+                    <img src={Logo} alt="" className='myLogo' />{t('name_short')}
                 </h1>
                 <ul className='footer_list'>
                     <li>
-                        <a href='#about' className='footer_link'>About</a>
+                        <a href='#about' className='footer_link'>{t('about')}</a>
                     </li>
                     <li>
-                        <a href='#portfolio' className='footer_link'>Project</a>
+                        <a href='#portfolio' className='footer_link'>{t('project')}</a>
                     </li>
                     <li>
-                        <a href='' className='footer_link'>Testimonial</a>
+                        <a href='' className='footer_link'>{t('testimonial')}</a>
                     </li>
 
 
@@ -35,7 +37,7 @@ const Footer = () => {
                         <i className="uil uil-instagram"></i>
                     </a>
                 </div>
-                <span className='footer_copyright'>&#169; Pavan Yadav. All rights reserved</span>
+                <span className='footer_copyright'>&#169; {t('my_name')}. {t('all_right_reserved')}</span>
 
             </div>
 

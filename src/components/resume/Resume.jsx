@@ -3,6 +3,7 @@ import "./resume.css"
 import Data from './Data'
 import CategoryButton from './CategoryButton'
 import MyResume from './MyResume'
+import { useTranslation } from "react-i18next"
 
 var resArr = [];
 Data.forEach(function (item) {
@@ -17,8 +18,8 @@ console.log(resArr);
 
 
 const Resume = () => {
+  const { t } = useTranslation()
   const [resume, setResume] = useState(Data)
-  const [tabItem, setTabItem] = useState(1)
   const [tab, setTab] = useState('Education')
   const [filteredItem, setFilteredItem] = useState([])
 
@@ -40,8 +41,8 @@ const Resume = () => {
 }
   return (
     <section className='qualification container section' id='resume'>
-      <h2 className='section_title'>Qualification </h2>
-      <span className='section__subtitle'> My personal journey</span>
+      <h2 className='section_title'>{t('qualification')} </h2>
+      <span className='section__subtitle'> {t('my_personal_journey')}</span>
       <div className='qualification_container container'>
         <div className='qualification_tabs'>
           {

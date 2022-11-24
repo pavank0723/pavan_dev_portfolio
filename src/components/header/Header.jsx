@@ -15,7 +15,7 @@ const Header = () => {
             <header className='header'>
                 <nav className='nav container'>
                     <a className='nav_logo'>
-                        <img src={Logo} alt="" className='myLogo' />avan
+                        <img src={Logo} alt="" className='myLogo' />{t('name_short')}
                     </a>
 
                     <div className={toggle ? 'nav_menu show_menu' : 'nav_menu'}>

@@ -1,15 +1,12 @@
 import React, { useEffect } from "react"
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-
-
 import Bharat from '../../assets/bharat.svg'
 import './lang.css'
-import translationEN from "./locales/en/translation.json";
-import translationHI from "./locales/hi/translation.json";
-import translationMA from "./locales/ma/translation.json";
+import translationEN from "../locales/en/translation.json";
+import translationHI from "../locales/hi/translation.json";
+import translationMA from "../locales/ma/translation.json";
 
-const Languages = ['en', 'hi', 'ma']
 i18n
     .use(initReactI18next) // passes i18n down to react-i18next
     .init({
@@ -29,33 +26,17 @@ i18n
 
         },
         lng: "en", // if you're using a language detector, do not define the lng option
-        react: {
-            useSuspense: false,
-            wait: true,
-            transSupportBasicHtmlNodes: true,
-            transKeepBasicHtmlNodesFor: ["br", "strong", "i", "sub", "sup", "li"],
-        },
         fallbackLng: "en",
-        detection: {
-            order: ['path', 'cookie', 'htmlTag', 'localStorage', 'subdomain'],
-            caches: ['cookie'],
-        },
-        debug: false,
-        whitelist: Languages,
 
         interpolation: {
             escapeValue: false // react already safes from xss => https://www.i18next.com/translation-function/interpolation#unescape
-        },
-        nsSeperator: false,
-        keySeperator: false,
-        backend: {
-            loadPath: '/locales/en/translation.json',
-        },
+        }
     });
 
 const LangMode = () => {
-    let cLang = localStorage.getItem('lang')
-    const [lang, setLang] = React.useState(cLang)
+    let currentLang = localStorage.getItem('lang')
+
+    const [lang, setLang] = React.useState(currentLang === null ? currentLang = 'en' : currentLang)
 
     const handleOnChange = (e) => {
         setLang(e.target.value)
@@ -63,13 +44,13 @@ const LangMode = () => {
     const handleOnClick = (l) => {
         return () => {
             i18n.changeLanguage(l)
-
+            
             localStorage.setItem('lang', l)
         }
     }
     useEffect(() => {
         console.log(lang)
-        let currentLang = localStorage.getItem('lang')
+        
         i18n.changeLanguage(currentLang)
     }, [lang])
     return (

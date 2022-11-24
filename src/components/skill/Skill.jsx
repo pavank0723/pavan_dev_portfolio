@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useTransition } from 'react'
 import "./skill.css"
 import Menu from './Menu'
 import ExpCategory from './ExpCategory'
-
 import MySkill from './MySkill'
-
+import { useTranslation } from 'react-i18next'
 
 console.table(Menu)
 
@@ -20,6 +19,7 @@ Menu.forEach(function (item) {
 console.log(resArr);
 
 const Skill = () => {
+    const { t } = useTranslation()
     const [skill, setSkill] = useState(Menu)
 
     const [tag, setTag] = useState('Frontend Development')
@@ -40,8 +40,8 @@ const Skill = () => {
     return (
         <>
             <section className='skill container section' id='skills'>
-                <h2 className='section_title'>Skills</h2>
-                <span className='section__subtitle'> My technical skills</span>
+                <h2 className='section_title'>{t('skills')}</h2>
+                <span className='section__subtitle'> {t('my_techical_skill')}</span>
                 <div className='skills_container container grid'>
                     {/* Experience Tabs */}
                     <div className='skills_tabs'>

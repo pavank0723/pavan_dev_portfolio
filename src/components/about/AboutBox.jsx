@@ -17,7 +17,7 @@ const AboutBox = () => {
                 <i className='about_icon fa-solid fa-laptop-code'></i>
                 <div>
                     <h3 className='about_title'>{t('completed')}</h3>
-                    <span className='about_subtitle'>{t('project')}</span>
+                    <span className='about_subtitle'>{t('project_exp')}</span>
                 </div>
 
             </div>

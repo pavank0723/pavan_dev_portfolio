@@ -3,10 +3,12 @@ import "./portfolio.css"
 import Menu from './Menu'
 import CategoryButton from './CategoryButton'
 import WorkItems from './WorkItems'
+import { useTranslation } from "react-i18next"
 
 const allCategory = ["All", ...new Set(Menu.map((curElem) => curElem.category))]
 
 const Portfolio = () => {
+  const { t } = useTranslation()
   const [work, setWork] = useState(Menu)
   const [catItem, setCatItem] = useState(allCategory)
 
@@ -33,8 +35,8 @@ const Portfolio = () => {
 
   return (
     <section className='work container section' id='portfolio'>
-      <h3 className='section_title'>Portfolio</h3>
-      <span className='section__subtitle'> Most recent works</span>
+      <h3 className='section_title'>{t('portfolios')}</h3>
+      <span className='section__subtitle'> {t('most_recent_work')}</span>
 
       {/* ------==== Work Menu ====----- */}
       <div className='work_filters'>
