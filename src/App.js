@@ -10,15 +10,18 @@ import Footer from './components/footer/Footer';
 import ScrollUp from './components/scrollup/ScrollUp';
 import Certificate from './components/certificate/Certificate';
 import Resume from './components/resume/Resume';
+import ParticleBG from './components/utils/ParticleBG';
+import MainHome from './components/home/MainHome';
 function App() {
   return <>
     {/* <Sidebar/> */}
-
+    
     <Header />
     
     <main className='main'>
     
-      <Home />
+      {/* <Home /> */}
+      <MainHome />
        <About />
        <Skill />
        

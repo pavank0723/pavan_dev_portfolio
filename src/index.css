@@ -95,12 +95,12 @@
 
 .dark-theme{
     --header-height: 3.5rem;
-    --first-color: hsl(48, 100%, 50%);
+    --first-color: #ffcc00;
     /* hsl(353, 100%, 65%)*/
-    --second-color: hsl(30, 90%, 59%);
+    --second-color: #f59638;
     --title-color: #f8f8f8;
     --text-color: #f3f3f3;
-    --body-color: hsl(0deg 0% 13%);
+    --body-color: #212121;
     --box-color: hsl(41, 100%, 89%);
     --container-color: #171717;
     --normal-color: #fff;

@@ -1,10 +1,10 @@
 import React from 'react'
+import ParticleBG from '../utils/ParticleBG'
 import './shape.css'
 
 const Shape = () => {
     return (
         <div className='shapes'>
-
             <svg
                 width="27"
                 height="29"
