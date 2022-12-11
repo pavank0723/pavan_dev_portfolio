@@ -68,7 +68,6 @@ const Menu = [
       category: "Website",
       demo: "https://uat.zoyafabricators.com/"
     },
-    
     {
       id: 9,
       image: Work7,
@@ -83,7 +82,6 @@ const Menu = [
       category: "Website",
       demo: "https://pavan-weather-setu.netlify.app/"
     },
-    
     {
       id: 11,
       image: Work11,
@@ -91,7 +89,6 @@ const Menu = [
       category: "DApps App",
       demo: "#"
     },
-    
     {
       id: 12,
       image: Work12,
@@ -99,7 +96,6 @@ const Menu = [
       category: "IoT",
       demo: "#"
     },
-    
   ];
   
 

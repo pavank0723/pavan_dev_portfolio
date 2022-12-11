@@ -95,6 +95,7 @@
     height: 100%;
     padding: 1.25rem;
     border: 2px solid var(--border-color3);
+    color: var(--title-color);
     background: none;
     outline: none;
     border-radius: 0.75rem;

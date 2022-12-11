@@ -17,7 +17,6 @@ const About = () => {
         <div className='about_data'>
           <AboutBox />
           <p className='about_description'> {t('all_about')}
-
           </p>
           <a download="" href={MyResume} className='btn'>
             {t('download')} <i className="fa-solid fa-download btn_icon"></i>
