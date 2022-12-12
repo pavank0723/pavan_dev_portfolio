@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import Bharat from '../../assets/bharat.svg'
+import Bharat from '../../../assets/bharat.svg'
 import './lang.css'
 import translationEN from "../locales/en/translation.json";
 import translationHI from "../locales/hi/translation.json";

@@ -1,12 +1,12 @@
-import Certificate1 from "../../assets/certificate/certificate_1.jpg"
-import Certificate2 from "../../assets/certificate/certificate_2.jpg"
-import Certificate3 from "../../assets/certificate/certificate_3.jpg"
-import Certificate4 from "../../assets/certificate/certificate_4.jpg"
-import Certificate5 from "../../assets/certificate/certificate_5.jpg"
-import Certificate6 from "../../assets/certificate/certificate_6.jpg"
-import Certificate7 from "../../assets/certificate/certificate_7.jpg"
-import Certificate8 from "../../assets/certificate/certificate_8.jpg"
-import Certificate9 from "../../assets/certificate/certificate_9.jpg"
+import Certificate1 from "../../../assets/certificate/certificate_1.jpg"
+import Certificate2 from "../../../assets/certificate/certificate_2.jpg"
+import Certificate3 from "../../../assets/certificate/certificate_3.jpg"
+import Certificate4 from "../../../assets/certificate/certificate_4.jpg"
+import Certificate5 from "../../../assets/certificate/certificate_5.jpg"
+import Certificate6 from "../../../assets/certificate/certificate_6.jpg"
+import Certificate7 from "../../../assets/certificate/certificate_7.jpg"
+import Certificate8 from "../../../assets/certificate/certificate_8.jpg"
+import Certificate9 from "../../../assets/certificate/certificate_9.jpg"
 
 const CertificateData = [
     {

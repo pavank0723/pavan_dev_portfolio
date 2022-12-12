@@ -1,13 +1,12 @@
 import React from 'react'
 import "./home.css"
-import PavanImg from "../../assets/py.png"
+import PavanImg from "../../../assets/py.png"
 import HeaderSocial from './HeaderSocial'
 import ScrollDown from './ScrollDown'
 import Shape from './Shape'
 import { useTypewriter } from 'react-simple-typewriter'
 import 'react-simple-typewriter/dist/index'
 import { useTranslation } from 'react-i18next'
-import ParticleBG from '../utils/ParticleBG'
 
 const Home = () => {
   const { t } = useTranslation();
@@ -26,7 +25,7 @@ const Home = () => {
 
         <div className='intro'>
 
-          <img src={PavanImg} alt="Dev Image" className="home_img" />
+          <img src={PavanImg} alt="Dev Image" className="home_img" onDoubleClick={() => alert("Go to Login page")} />
           <h1 className='home_name'>{t('my_name')}</h1>
           <p className='home_self_intro'>{t('i_am')}
             <span className='home_type_Writter'>
