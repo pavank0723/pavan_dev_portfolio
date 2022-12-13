@@ -32,21 +32,10 @@ function App() {
        <Certificate />
        <Contact />
     {/*
-    <Resume />
-    
-    <Portfolio />
-
-    <NewPortfolio />
-    <NewPortfolio2 />
-
-    <NewPortfolio3 />
-    
     <Pricing />
-    
     <Blog />
     <Testimonials />
-    <Contact />
-    <Certificate /> */}
+    <Contact /> */}
     </main>
     <Footer />
     <ScrollUp />
