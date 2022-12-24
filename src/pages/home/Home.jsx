@@ -1,6 +1,6 @@
 import React from 'react'
 import "./home.css"
-import PavanImg from "../../../assets/py.png"
+import PavanImg from "../../assets/py.png"
 import HeaderSocial from './HeaderSocial'
 import ScrollDown from './ScrollDown'
 import Shape from './Shape'

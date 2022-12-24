@@ -1,15 +1,16 @@
-import Work1 from "../../../assets/work/work1.jpg"
-import Work2 from "../../../assets/work/work2.jpg"
-import Work3 from "../../../assets/work/work3.jpg"
-import Work4 from "../../../assets/work/work4.jpg"
-import Work5 from "../../../assets/work/work5.jpg"
-import Work6 from "../../../assets/work/work6.jpg"
-import Work7 from "../../../assets/work/work7.jpg"
-import Work8 from "../../../assets/work/work8.jpg"
-import Work9 from "../../../assets/work/work9.jpg"
-import Work10 from "../../../assets/work/work10.jpg"
-import Work11 from "../../../assets/work/work11.jpg"
-import Work12 from "../../../assets/work/work12.jpg"
+import Work1 from "../../assets/work/work1.jpg"
+import Work2 from "../../assets/work/work2.jpg"
+import Work3 from "../../assets/work/work3.jpg"
+import Work4 from "../../assets/work/work4.jpg"
+import Work5 from "../../assets/work/work5.jpg"
+import Work6 from "../../assets/work/work6.jpg"
+import Work7 from "../../assets/work/work7.jpg"
+import Work8 from "../../assets/work/work8.jpg"
+import Work9 from "../../assets/work/work9.jpg"
+import Work10 from "../../assets/work/work10.jpg"
+import Work11 from "../../assets/work/work11.jpg"
+import Work12 from "../../assets/work/work12.jpg"
+
 
 const Menu = [
     {

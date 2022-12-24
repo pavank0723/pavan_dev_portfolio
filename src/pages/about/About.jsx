@@ -1,7 +1,7 @@
 import React from 'react'
 import "./about.css"
-import Me from "../../../assets/py.png"
-import MyResume from "../../../assets/pavan's_resume.pdf"
+import Me from "../../assets/py.png"
+import MyResume from "../../assets/pavan's_resume.pdf"
 import AboutBox from './AboutBox'
 import { useTranslation } from 'react-i18next'
 

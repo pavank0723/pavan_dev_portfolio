@@ -7,15 +7,15 @@ import { useTranslation } from "react-i18next"
 
 var resArr = [];
 Data.forEach(function (item) {
-    var i = resArr.findIndex(x => x.category == item.category);
-    var j = resArr.findIndex(y => y.icon == item.icon);
+  const {id,category,icon} = item
+    var i = resArr.findIndex(x => x.category === category);
+    var j = resArr.findIndex(y => y.icon === icon);
     
     if (i <= -1 || j <= -1) {
-        resArr.push({ id: item.id, category: item.category, icon: item.icon });
+        resArr.push({ id, category, icon});
     }
 });
 console.log(resArr);
-
 
 const Resume = () => {
   const { t } = useTranslation()

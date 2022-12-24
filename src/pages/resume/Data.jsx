@@ -40,7 +40,7 @@ const Data = [
       category: "Freelancing",
       icon: "uil-briefcase-alt",
       year: "2021 - 2022",
-      title: "Flutter Developement",
+      title: "Flutter Development",
       subtitle: 'JMM InfoTech',
       desc: "Lorem ipsum dolor sit amet quo ei simul congue exerciad nec admodum perfecto.",
     },

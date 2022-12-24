@@ -1,5 +1,6 @@
-import ParticleBG from '../utils/ParticleBG'
+import ParticleBG from '../../utils/ParticleBG'
 import Home from './Home'
+
 const MainHome = () => {
     return (
         <>

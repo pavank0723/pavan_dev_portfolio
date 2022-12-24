@@ -1,5 +1,5 @@
 import React from 'react'
-import ParticleBG from '../utils/ParticleBG'
+import ParticleBG from '../../utils/ParticleBG'
 import './shape.css'
 
 const Shape = () => {

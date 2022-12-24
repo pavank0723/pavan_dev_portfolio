@@ -1,6 +1,6 @@
 import React from 'react'
 import './footer.css'
-import Logo from '../../../assets/icon_py2.png'
+import Logo from '../../assets/icon_py2.png'
 import { useTranslation } from 'react-i18next'
 
 const Footer = () => {

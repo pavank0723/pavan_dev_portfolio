@@ -1,17 +1,16 @@
 import './App.css';
-import Home from './components/ui/home/Home';
-import About from './components/ui/about/About';
-import Services from './components/ui/services/Services';
-import Portfolio from './components/ui/portfolio/Portfolio';
-import Contact from './components/ui/contact/Contact';
-import Skill from './components/ui/skill/Skill';
-import Header from './components/ui/header/Header';
-import Footer from './components/ui/footer/Footer';
-import ScrollUp from './components/ui/scrollup/ScrollUp';
-import Certificate from './components/ui/certificate/Certificate';
-import Resume from './components/ui/resume/Resume';
-import ParticleBG from './components/ui/utils/ParticleBG';
-import MainHome from './components/ui/home/MainHome';
+import MainHome from './pages/home/MainHome';
+import About from './pages/about/About';
+import Services from './pages/services/Services';
+import Portfolio from './pages/portfolio/Portfolio';
+import Contact from './pages/contact/Contact';
+import Skill from './pages/skill/Skill';
+import Header from './pages/header/Header';
+import Footer from './pages/footer/Footer';
+import ScrollUp from './pages/scrollup/ScrollUp';
+import Certificate from './pages/certificate/Certificate';
+import Resume from './pages/resume/Resume';
+
 function App() {
   return <>
     {/* <Sidebar/> */}
@@ -26,7 +25,7 @@ function App() {
        <Skill />
        
        <Resume />
-       {/* <Services /> */}
+       <Services />
        
        <Portfolio />
        <Certificate />
