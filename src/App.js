@@ -10,6 +10,7 @@ import Footer from './pages/footer/Footer';
 import ScrollUp from './pages/scrollup/ScrollUp';
 import Certificate from './pages/certificate/Certificate';
 import Resume from './pages/resume/Resume';
+import SkillNew from './pages/skill/SkillNew';
 
 function App() {
   return <>
@@ -23,9 +24,9 @@ function App() {
       <MainHome />
        <About />
        <Skill />
-       
+       <SkillNew />
        <Resume />
-       <Services />
+       {/* <Services /> */}
        
        <Portfolio />
        <Certificate />

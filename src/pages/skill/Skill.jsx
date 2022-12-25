@@ -9,11 +9,12 @@ console.table(Menu)
 
 var resArr = [];
 Menu.forEach(function (item) {
-    var i = resArr.findIndex(x => x.category === item.category);
-    var j = resArr.findIndex(y => y.icon === item.icon);
-    var l = resArr.findIndex(l => l.description === item.description);
+    const {id,category,icon,description} = item
+    var i = resArr.findIndex(x => x.category === category);
+    var j = resArr.findIndex(y => y.icon === icon);
+    var l = resArr.findIndex(l => l.description === description);
     if (i <= -1 || j <= -1 || l <= -1) {
-        resArr.push({ id: item.id, category: item.category, icon: item.icon, description: item.description });
+        resArr.push({ id, category, icon, description });
     }
 });
 console.log(resArr);

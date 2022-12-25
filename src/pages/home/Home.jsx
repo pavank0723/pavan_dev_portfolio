@@ -40,7 +40,7 @@ const Home = () => {
           <a href='#contact' className='btn'> {t('hire_me')}</a>
           <ScrollDown />
         </div>
-        <Shape />
+        {/* <Shape /> */}
       </section>
     </>
   )

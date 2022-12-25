@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Logo from "../../assets/icon_py2.png"
 import LangMode from '../../utils/LangMode'
-import ThemeMode from '../../utils/ThemeMode'
+import ThemeMode from '../../utils/themes/ThemeMode'
 
 import { useTranslation } from 'react-i18next'
 

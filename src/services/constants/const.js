@@ -1,0 +1,2 @@
+export const GET_SKILL_LIST = 'GET_SKILL_LIST'
+export const SET_SKILL_LIST = 'SET_SKILL_LIST'
