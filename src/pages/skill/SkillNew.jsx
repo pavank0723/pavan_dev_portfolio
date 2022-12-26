@@ -20,10 +20,12 @@ const SkillNew = () => {
     console.log("=====This is fatch data=====")
     console.log(typeof(MenuNew))
 
-    console.log(MenuNew.map((i)=>i.skills))
+    console.log("API ==>>>>>>",typeof(result))
+
+    console.log("API Skills ",result.map((i)=>i.skills))
 
     const allSkill = MenuNew.map((i)=>i.skills)
-
+    const resultSkill = result.map((i)=>i.skills)
     console.log("All Skills-------- ",allSkill)
     
 
@@ -39,7 +41,7 @@ const SkillNew = () => {
     });
 
     var resSkillArr = [];
-    result.forEach(function (item) {
+    resultSkill.forEach(function (item) {
         const { _id, title, subtitle } = item
         var i = resSkillArr.findIndex(x => x.title === title);
         var j = resSkillArr.findIndex(y => y.subtitle === subtitle);
@@ -63,13 +65,13 @@ const SkillNew = () => {
         dispatch(getSkillList())
     }, [])
 
-    const filteredItem = (techSkill) => {
-        const updatedSkills = allSkill.filter((curElem) => {
-            return curElem.name === techSkill
-        })
+    // const filteredItem = (techSkill) => {
+    //     const updatedSkills = allSkill.filter((curElem) => {
+    //         return curElem.name === techSkill
+    //     })
 
-        setFilteredSkill(updatedSkills)
-    }
+    //     setFilteredSkill(updatedSkills)
+    // }
 
     const filterItem = (techSkill) => {
         const updatedSkills = result.filter((curElem) => {
