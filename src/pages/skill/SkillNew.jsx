@@ -41,46 +41,24 @@ const SkillNew = () => {
         }
     });
     console.log("All Category ====>>>>", resArr)
-    // var resSkillArr = [];
-    // resultSkill.forEach(function (item) {
-    //     const { _id, title, subtitle } = item
-    //     var i = resSkillArr.findIndex(x => x.title === title);
-    //     var j = resSkillArr.findIndex(y => y.subtitle === subtitle);
-    //     if (i <= -1 || j <= -1) {
-    //         resSkillArr.push({ _id, title, subtitle });
-    //     }
-    // });
 
-    const [skill, setSkill] = useState(result)
+    const [skill, setSkill] = useState(resArr)
 
     const [tag, setTag] = useState('Frontend Development')
 
-    const [filteredSkill, setFilteredSkill] = useState()
+    const [filteredSkill, setFilteredSkill] = useState(resArr.map((i)=> i.skills))
+    console.log("Filtered Skills ",filteredSkill)
 
-
-    // useEffect(() => {
-    //     tag === 'Frontend Development' ? setFilteredSkill(skill.filter(item => item.name === 'Frontend Development')) : setFilteredSkill(skill.filter(item => item.name === tag))
-    // }, [tag])
+    useEffect(() => {
+        tag === 'Frontend Development' ? setFilteredSkill(skill.filter(item => item.name === 'Frontend Development')) : setFilteredSkill(skill.filter(item => item.name === tag))
+    }, [tag])
 
     useEffect(() => {
         dispatch(getSkillList())
     }, [])
 
-    // const filteredItem = (techSkill) => {
-    //     const updatedSkills = allSkill.filter((curElem) => {
-    //         return curElem.name === techSkill
-    //     })
-
-    //     setFilteredSkill(updatedSkills)
-    // }
 
     const filterItem = () => {
-        // const updatedSkills = resArr.filter((curElem) => {
-        //     return curElem.name === techSkill
-        // })
-        // const allItems = resArr.skills;
-        // const categoryItems = allItems.filter(item => item.skills === skills);
-        // setFilteredSkill(categoryItems)
     }
 
     return (
@@ -107,38 +85,10 @@ const SkillNew = () => {
                     </div>
 
                     {/* Experience in Skills */}
-                    {/* <MySkillNew filteredItem={filteredItem} /> */}
+                    
+                    <MySkillNew filteredSkill={filteredSkill} />
 
-                    <div className='skills_content'>
-                        {
-                            resArr.map((categ, index) => {
-                                return <div className='skills_group' key={index}>
-                                    <div className='skills_list grid'>
-                                        {
-                                            categ.skills.map((item, index) => {
-                                                const { _id, title, subtitle } = item
-                                                console.log("Title ===> ", title)
-                                                console.log("Subtitle ==> ", subtitle)
-                                                return <div className='skills_data' key={index}>
-                                                    <div className='skills_title'>
-                                                        <h3 className='skills_name'>{title}</h3>
-                                                        {/* <span className='skills_number'>{subtitle}</span> */}
-                                                    </div>
-
-                                                    <div className='skills_bar'>
-                                                        <span className='skills_percentage' style={{ width: `${subtitle}` }}></span>
-
-                                                    </div>
-                                                </div>
-                                            })
-                                        }
-
-                                    </div>
-                                </div>
-                            })
-                        }
-
-                    </div>
+                    
                 </div>
             </section>
         </>
