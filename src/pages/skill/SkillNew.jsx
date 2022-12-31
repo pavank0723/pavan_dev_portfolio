@@ -17,17 +17,6 @@ const SkillNew = () => {
     const dispatch = useDispatch()
     const { t } = useTranslation()
     const result = useSelector((state) => state.skillData)
-    console.log("=====This is fatch data=====")
-    console.log(typeof (MenuNew))
-
-    console.log("API ==>>>>>>", typeof (result))
-
-    console.log("API Skills ", result.map((i) => i.skills))
-
-    const allSkill = MenuNew.map((i) => i.skills)
-    const resultSkill = result.map((i) => i.skills)
-    console.log("All Skills-------- ", allSkill)
-
 
     var resArr = [];
     result.forEach(function (item) {
@@ -40,26 +29,15 @@ const SkillNew = () => {
             resArr.push({ _id, name, icon, description, skills });
         }
     });
-    console.log("All Category ====>>>>", resArr)
+    const skillCategory = resArr.map((i) => i.name)
 
-    const [skill, setSkill] = useState(resArr)
+    console.log("All Category ====>>>>", skillCategory)
 
-    const [tag, setTag] = useState('Frontend Development')
-
-    const [filteredSkill, setFilteredSkill] = useState(resArr.map((i)=> i.skills))
-    console.log("Filtered Skills ",filteredSkill)
-
-    useEffect(() => {
-        tag === 'Frontend Development' ? setFilteredSkill(skill.filter(item => item.name === 'Frontend Development')) : setFilteredSkill(skill.filter(item => item.name === tag))
-    }, [tag])
+    const [tag, setTag] = useState('Frontend Development')   
 
     useEffect(() => {
         dispatch(getSkillList())
     }, [])
-
-
-    const filterItem = () => {
-    }
 
     return (
         <>
@@ -67,14 +45,13 @@ const SkillNew = () => {
                 <h2 className='section_title'>{t('skills')}</h2>
                 <span className='section__subtitle'> {t('my_techical_skill')}</span>
                 <div className='skills_container container grid'>
-                    {/* Experience Tabs */}
+
                     <div className='skills_tabs'>
                         {
                             resArr.map((item, index) => {
                                 return (
                                     <ExpCategoryNew key={index}
                                         data={item}
-                                        filterItem={filterItem}
                                         handleSetTag={setTag}
                                         currentTag={tag}
                                     />
@@ -83,14 +60,75 @@ const SkillNew = () => {
                         }
 
                     </div>
-
-                    {/* Experience in Skills */}
                     
-                    <MySkillNew filteredSkill={filteredSkill} />
+                    {/* <MySkillNew filteredSkill={filteredSkill} /> */}
 
-                    
+                    <div className='skills_content'>
+                        {
+                            resArr.map((categ, index) => {
+                                return <div className='skills_group' key={index}>
+                                    <div className='skills_list grid'>
+                                        {
+                                            categ.skills.map((item, index) => {
+                                                const { _id, title, subtitle } = item
+                                                console.log("Title ===> ", title)
+                                                console.log("Subtitle ==> ", subtitle)
+                                                return (
+                                                    tag == categ.name?<div className='skills_data' key={index}>
+                                                        <div className='skills_title'>
+                                                            <h3 className='skills_name'>{title}</h3>
+                                                            {/* <span className='skills_number'>{subtitle}</span> */}
+                                                        </div>
+
+                                                        <div className='skills_bar'>
+                                                            <span className='skills_percentage' style={{ width: `${subtitle}` }}></span>
+
+                                                        </div>
+                                                    </div>
+                                                    :null
+                                                )
+                                            })
+                                        }
+
+                                    </div>
+                                </div>
+                            })
+                        }
+
+                    </div>
                 </div>
             </section>
+
+            {/* <div className='skill container section' _id='skills'>
+                <div className='skills_container container grid'>
+                    <div className='skills_tabs'>
+                        <ul className='skills_header'>
+                            {
+                                resArr.map((category, index) => {
+                                    return (
+                                        <>
+                                            <li key={index} onClick={() => handleSkill(category.name)}>{category.name}</li>
+                                            <ul className='skills_content'>
+                                                {
+                                                    category.skills.map((item, index) => {
+                                                        return (
+                                                            tag == category.name ? <li key={index}>{item.title}</li> : null
+
+                                                        )
+                                                    })
+                                                }
+                                            </ul>
+                                        </>
+
+                                    )
+                                })
+                            }
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div> */}
         </>
     )
 }

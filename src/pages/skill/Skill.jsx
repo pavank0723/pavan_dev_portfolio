@@ -31,13 +31,6 @@ const Skill = () => {
         tag === 'Frontend Development' ? setFilteredSkill(skill.filter(item => item.category === 'Frontend Development')) : setFilteredSkill(skill.filter(item => item.category === tag))
     }, [tag])
 
-    const filterItem = (categorySkill) => {
-        const updatedSkills = Menu.filter((curElem) => {
-            return curElem.category === categorySkill
-        })
-
-        setSkill(updatedSkills)
-    }
     return (
         <>
             <section className='skill container section' id='skills'>
@@ -51,7 +44,7 @@ const Skill = () => {
                                 return (
                                     <ExpCategory key={index}
                                         data={item}
-                                        filterItem={filterItem}
+                                        // filterItem={filterItem}
                                         handleSetTag={setTag}
                                         currentTag={tag}
                                     />
