@@ -1,34 +1,24 @@
 import React from 'react'
 
-const MySkillNew = ({ filteredSkill }) => {
+const MySkillNew = ({ categ, tag }) => {
     return (
-        <div className='skills_content'>
-            <div className='skills_group'>
-                <div className='skills_list grid'>
-                    {filteredSkill.map((elem) => {
-                        const { _id, title, subtitle } = elem
-                        return (
-                            <div className='skills_data' key={_id}>
-                                <div className='skills_title'>
-                                    <h3 className='skills_name'>{title}</h3>
-                                    <span className='skills_number'>{subtitle}</span>
-                                </div>
+        categ.skills.map((item) => {
+            const { _id, title, subtitle } = item
+            return (
+                tag === categ.name ? <div className='skills_data' key={_id}>
+                    <div className='skills_title'>
+                        <h3 className='skills_name'>{title}</h3>
+                        
+                    </div>
 
-                                <div className='skills_bar'>
-                                    <span className='skills_percentage' style={{ width: `${subtitle}` }}></span>
+                    <div className='skills_bar'>
+                        <span className='skills_percentage' style={{ width: `${subtitle}` }}></span>
 
-                                </div>
-                            </div>
-                        )
-                    })}
-
+                    </div>
                 </div>
-            </div>
-
-
-
-
-        </div>
+                    : null
+            )
+        })
     )
 }
 

@@ -60,7 +60,7 @@ const SkillNew = () => {
                         }
 
                     </div>
-                    
+
                     {/* <MySkillNew filteredSkill={filteredSkill} /> */}
 
                     <div className='skills_content'>
@@ -69,25 +69,7 @@ const SkillNew = () => {
                                 return <div className='skills_group' key={index}>
                                     <div className='skills_list grid'>
                                         {
-                                            categ.skills.map((item, index) => {
-                                                const { _id, title, subtitle } = item
-                                                console.log("Title ===> ", title)
-                                                console.log("Subtitle ==> ", subtitle)
-                                                return (
-                                                    tag == categ.name?<div className='skills_data' key={index}>
-                                                        <div className='skills_title'>
-                                                            <h3 className='skills_name'>{title}</h3>
-                                                            {/* <span className='skills_number'>{subtitle}</span> */}
-                                                        </div>
-
-                                                        <div className='skills_bar'>
-                                                            <span className='skills_percentage' style={{ width: `${subtitle}` }}></span>
-
-                                                        </div>
-                                                    </div>
-                                                    :null
-                                                )
-                                            })
+                                            <MySkillNew categ={categ} tag={tag}/>
                                         }
 
                                     </div>
@@ -98,37 +80,6 @@ const SkillNew = () => {
                     </div>
                 </div>
             </section>
-
-            {/* <div className='skill container section' _id='skills'>
-                <div className='skills_container container grid'>
-                    <div className='skills_tabs'>
-                        <ul className='skills_header'>
-                            {
-                                resArr.map((category, index) => {
-                                    return (
-                                        <>
-                                            <li key={index} onClick={() => handleSkill(category.name)}>{category.name}</li>
-                                            <ul className='skills_content'>
-                                                {
-                                                    category.skills.map((item, index) => {
-                                                        return (
-                                                            tag == category.name ? <li key={index}>{item.title}</li> : null
-
-                                                        )
-                                                    })
-                                                }
-                                            </ul>
-                                        </>
-
-                                    )
-                                })
-                            }
-                        </ul>
-
-                    </div>
-                </div>
-
-            </div> */}
         </>
     )
 }
