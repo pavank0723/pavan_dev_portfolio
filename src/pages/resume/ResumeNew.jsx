@@ -26,28 +26,10 @@ const ResumeNew = () => {
 
   const [tab, setTab] = useState('Education')
 
-//   console.log(tab)
-//   console.log(filteredItem)
-//   useEffect(() => {
-//     tab === 'Education' ? setFilteredItem(resume.filter(item => item.category === 'Education')) : setFilteredItem(resume.filter(item => item.category === tab))
-// }, [tab])
-
-console.log("Qualification Data  ", result)
-
 useEffect(() =>{
   dispatch(getQualificationList())
 },[])
 
-  // const toggleTab = (index) => {
-  //   setTabItem(index)
-  // }
-//   const filterItem = (categoryResume) => {
-//     const updatedResumes = Data.filter((curElem) => {
-//         return curElem.category === categoryResume
-//     })
-
-//     setResume(updatedResumes)
-// }
   return (
     <section className='qualification container section' id='resume'>
       <h2 className='section_title'>{t('qualification')} </h2>
@@ -55,7 +37,7 @@ useEffect(() =>{
       <div className='qualification_container container'>
         <div className='qualification_tabs'>
           {
-            result.map((item,index) =>{
+            result.sort((a, b) => a[1] - b[1]).map((item,index) =>{
               return(
                 <CategoryButtonNew key={index}
                   data = {item}
@@ -73,14 +55,7 @@ useEffect(() =>{
           {/* <MyResumeNew filteredItem={filteredItem}/> */}
           {
                             result.map((categ, index) => {
-                                return <div className='skills_group' key={index}>
-                                    <div className='skills_list grid'>
-                                        {
-                                            <MyResumeNew categ={categ} tab={tab}/>
-                                        }
-
-                                    </div>
-                                </div>
+                                return  <MyResumeNew categ={categ} tab={tab}/>
                             })
                         }
         </div>
