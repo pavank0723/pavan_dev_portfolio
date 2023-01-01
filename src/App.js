@@ -11,6 +11,7 @@ import ScrollUp from './pages/scrollup/ScrollUp';
 import Certificate from './pages/certificate/Certificate';
 import Resume from './pages/resume/Resume';
 import SkillNew from './pages/skill/SkillNew';
+import ResumeNew from './pages/resume/ResumeNew';
 
 function App() {
   return <>
@@ -27,6 +28,7 @@ function App() {
        <SkillNew />
        <Resume />
        {/* <Services /> */}
+       <ResumeNew />
        
        <Portfolio />
        <Certificate />

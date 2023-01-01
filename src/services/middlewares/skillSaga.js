@@ -1,4 +1,4 @@
-import { takeEvery,put } from 'redux-saga/effects'
+import { takeEvery,put,call } from 'redux-saga/effects'
 import SkillDataService from '../apis/skill_api'
 import { GET_SKILL_LIST, SET_SKILL_LIST } from '../constants/const'
 
@@ -18,7 +18,7 @@ function* getSkills() {
     yield put({type:SET_SKILL_LIST,data})
 }
 function* skillSaga(){
-    yield takeEvery(GET_SKILL_LIST,getSkills)
+    yield takeEvery('GET_SKILL_LIST',getSkills)
 }
 
 export default skillSaga

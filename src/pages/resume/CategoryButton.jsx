@@ -6,9 +6,7 @@ const CategoryButton = ({ data, handleSetTab, currentTab }) => {
     <>
       <div className={category === currentTab ? 'qualification_button qualification_active  button_flex' : 'qualification_button button_flex'} onClick={() => handleSetTab(category)}>
         <i className={`uil ${icon} qualification_icon`}></i>{category}
-
       </div>
-      
     </>
   )
 }

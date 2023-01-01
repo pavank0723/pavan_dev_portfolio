@@ -1,2 +1,9 @@
+//#region SKILL 
 export const GET_SKILL_LIST = 'GET_SKILL_LIST'
 export const SET_SKILL_LIST = 'SET_SKILL_LIST'
+//#endregion
+
+//#region QUALIFICATION
+export const GET_QUALIFICATION_LIST = 'GET_QUALIFICATION_LIST'
+export const SET_QUALIFICATION_LIST = 'SET_QUALIFICATION_LIST'
+//#endregion

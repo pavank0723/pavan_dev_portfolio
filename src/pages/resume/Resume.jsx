@@ -63,7 +63,6 @@ const Resume = () => {
 
         <div className='qualification_sections'>
           <MyResume filteredItem={filteredItem}/>
-
         </div>
 
       </div>

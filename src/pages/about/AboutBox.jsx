@@ -6,7 +6,7 @@ const AboutBox = () => {
         <div className='about_boxes grid'>
             <div className='about_box'>
 
-                <i className="about_icon fa-solid fa-bezier-curve"></i>
+                <i className="about_icon uil uil-award-alt"></i>
                 <div>
                     <h3 className='about_title'>{t('freelancing')}</h3>
                     <span className='about_subtitle'>{t('year')}</span>
@@ -14,7 +14,7 @@ const AboutBox = () => {
 
             </div>
             <div className='about_box'>
-                <i className='about_icon fa-solid fa-laptop-code'></i>
+                <i className='about_icon uil uil-briefcase-alt'></i>
                 <div>
                     <h3 className='about_title'>{t('completed')}</h3>
                     <span className='about_subtitle'>{t('project_exp')}</span>
@@ -23,7 +23,7 @@ const AboutBox = () => {
             </div>
             
             <div className='about_box'>
-                <i className='about_icon fa-solid fa-cubes'></i>
+                <i className='about_icon uil uil-headphones'></i>
                 <div>
                     <h3 className='about_title'>{t('support')}</h3>
                     <span className='about_subtitle'>{t('online')}</span>
