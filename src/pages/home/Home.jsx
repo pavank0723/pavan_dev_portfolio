@@ -7,6 +7,7 @@ import Shape from './Shape'
 import { useTypewriter } from 'react-simple-typewriter'
 import 'react-simple-typewriter/dist/index'
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   const { t } = useTranslation();
@@ -25,7 +26,7 @@ const Home = () => {
 
         <div className='intro'>
 
-          <img src={PavanImg} alt="Dev Image" className="home_img" onDoubleClick={() => alert("Go to Login page")} />
+          <Link to='/login'><img src={PavanImg} alt="Dev Image" className="home_img" onDoubleClick={() => alert("Go to Login page")} /></Link>
           <h1 className='home_name'>{t('my_name')}</h1>
           <p className='home_self_intro'>{t('i_am')}
             <span className='home_type_Writter'>

@@ -12,35 +12,19 @@ import Certificate from './pages/certificate/Certificate';
 import Resume from './pages/resume/Resume';
 import SkillNew from './pages/skill/SkillNew';
 import ResumeNew from './pages/resume/ResumeNew';
+import { Route, Routes } from 'react-router-dom';
+import FrontendPage from './pages/FrontendPage';
+import LoginPage from './common/LoginPage/LoginPage';
+import NotFound from './common/NotFoundPage/NotFound';
 
 function App() {
   return <>
-    {/* <Sidebar/> */}
     
-    <Header />
-    
-    <main className='main'>
-    
-      {/* <Home /> */}
-      <MainHome />
-       <About />
-       <Skill />
-       <SkillNew />
-       <Resume />
-       {/* <Services /> */}
-       <ResumeNew />
-       
-       <Portfolio />
-       <Certificate />
-       <Contact />
-    {/*
-    <Pricing />
-    <Blog />
-    <Testimonials />
-    <Contact /> */}
-    </main>
-    <Footer />
-    <ScrollUp />
+      <Routes>
+        <Route path='/' element={<FrontendPage />} />
+        <Route path='/login' element={<LoginPage />}/>
+        <Route path='/*' element={<NotFound />}/>
+      </Routes>
   </>
 }
 
