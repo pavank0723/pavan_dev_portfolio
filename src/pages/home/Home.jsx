@@ -26,7 +26,8 @@ const Home = () => {
 
         <div className='intro'>
 
-          <Link to='/login'><img src={PavanImg} alt="Dev Image" className="home_img" onDoubleClick={() => alert("Go to Login page")} /></Link>
+          
+          <Link to='/login'><img src={PavanImg} alt="Dev Image" className="home_img" /></Link>
           <h1 className='home_name'>{t('my_name')}</h1>
           <p className='home_self_intro'>{t('i_am')}
             <span className='home_type_Writter'>

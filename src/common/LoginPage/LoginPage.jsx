@@ -3,7 +3,7 @@ const LoginPage = () => {
     return (
         <>
         <h1>Login Page</h1>
-            {/* <div className="d-lg-flex half">
+            <div className="d-lg-flex half">
                 <div className="bg order-1 order-md-2" style="background-image: url('images/bg_1.jpg');"></div>
                 <div className="contents order-2 order-md-1">
 
@@ -39,7 +39,7 @@ const LoginPage = () => {
                 </div>
 
 
-            </div> */}
+            </div>
 
         </>
     )
