@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import "../themes/theme.css"
+import "./theme.css"
 const ThemeMode = () => {
     const [theme, setTheme] = useState('dark-theme')
 
